@@ -1,0 +1,26 @@
+body {
+    background-color: white;
+}
+
+
+.container>div {
+
+    padding: 30px;
+    font-size: 20px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/*
+.container>div:nth-child(even) {
+    background-color: blue;
+}
+
+.container>div:nth-child(odd) {
+    background-color: black;
+}
+
+*/

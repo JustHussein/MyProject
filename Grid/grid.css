@@ -1,0 +1,35 @@
+.container {
+    display: grid;
+    /*grid-template-columns: repeat(12, 1rf);*/
+    grid-template-rows: 200px 600px 200px;
+    grid-template-areas:
+        "m m h h h h h h h h h h"
+        "m m c c c c c c c c c c"
+        "f f f f f f f f f f f f"
+    ;
+    gap: 2px;
+}
+
+.header {
+    grid-area: h;
+    background-color: #3498db;
+
+}
+
+.menu {
+    grid-area: m;
+    background-color: #2ecc71;
+
+}
+
+.content {
+    grid-area: c;
+    background-color: #95a5a6;
+
+}
+
+.footer {
+    grid-area: f;
+    background-color: #e67e22;
+
+}
