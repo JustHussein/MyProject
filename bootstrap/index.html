@@ -1,34 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style/bootstrap-5.3.0-alpha1-dist/css/bootstrap-grid.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bootstrap</title>
+    <!--this part for bopotstrap-->
+    <link
+      rel="stylesheet"
+      href="style/bootstrap-5.3.0-alpha1-dist/css/bootstrap-grid.min.css"
+    />
     <style>
-        .my-col{
-            background-color: skyblue;
-            color: white;
-            font-size: 1.5em;
-            margin: 10px;
-            padding: 10px;
-            border-radius: 50px;
-            text-align: center;
-        }
+      .my-col {
+        background-color: #1c82ad;
+        color: white;
+        font-size: 1.5em;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 50px;
+        text-align: center;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <!-- all page must be in this class -->
     <div class="container-fluid">
-        <div class="row">
-            <div class="col"><div class="my-col">col1</div></div>
-            <div class="col"><div class="my-col">col2</div></div>
-            <div class="col"><div class="my-col">col3</div></div>
+      <div class="row">
+        <div class="col"><div class="my-col">col1</div></div>
+        <div class="col"><div class="my-col">col2</div></div>
+        <div class="col"><div class="my-col">col3</div></div>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          <div class="my-col">col1</div>
         </div>
+        <div class="col-3">
+          <div class="my-col">col2</div>
+        </div>
+        <div class="col-6">
+          <div class="my-col">col3</div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          <div class="my-col">col1</div>
+        </div>
+        <div class="col">
+          <div class="my-col">col2</div>
+        </div>
+        <div class="col-3">
+          <div class="my-col">col3</div>
+        </div>
+      </div>
     </div>
 
-
+    <!-- this is for bootstrap -->
     <script src="script/jquery-3.6.3.slim.min.js"></script>
     <script src="style/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
-</body>
+  </body>
 </html>
