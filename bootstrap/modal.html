@@ -15,19 +15,33 @@
 
     <button class="btn btn-danger" type="button" data-toggle="modal" data-target="#mymodal">lunch modal</button>
     
-    <div class="modal fade" id="mymodal">
-        <div class="modal-dialog">
+    <div class="modal fade" id="mymodal" data-backdrop="static">
+        <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">modal title</h5>
+                    <!-- Close button -->
+                    <button class="close" type="button" data-dismiss="modal">
+                        <span>
+                            &times;
+                        </span>
+                    </button>
+                </div>
                 <div class="modal-body">
-                    Lorem ipsum dolor sit amet.
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel dolorem porro deserunt veniam consequatur blanditiis ut itaque temporibus iure aliquam.
+                </div>
+                
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-dismiss="modal">close</button>
+                    <button class="btn btn-primary" data-dismiss="modal">save</button>
                 </div>
             </div>
         </div>
     </div>
 
-    
     <script src="./js/jquery-3.6.4.min.js"></script>
-    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+
 
 </body>
 </html>
