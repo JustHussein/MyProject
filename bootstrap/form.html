@@ -14,6 +14,44 @@
             <input id="username" type="text" class="form-control">
             <label for="passwd">Password:</label>
             <input id="passwd" type="text" class="form-control">
+            <!-- Radio Button -->
+            <div class="form-check mt-2">
+                <input type="radio" class="form-check-input" id="male" name="gender" value="1">
+                <label class="form-check-label" for="male">Male</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" class="form-check-input" id="female" name="gender" value="2">
+                <label class="form-check-label" for="female">Female</label>
+            </div>
+            <!-- Radio Button -->
+
+            <!-- select box -->
+            <label for="city">City</label>
+            <select name="city" id="city" class="form-control">
+                <option value="city1">city1</option>
+                <option value="city2">city2</option>
+                <option value="city3">city3</option>
+            </select>
+
+            <!-- Text Area -->
+            <label for="textarea">Description</label>
+            <textarea class="form-control" name="" id="textarea"></textarea>
+
+            <!-- File -->
+            <label for="fileinput">Files</label>
+            <input class="form-control w-25" type="file" id="fileinput" >
+
+            <!-- range -->
+                <label for="ramge">Range</label>
+                <input class="form-range" type="range" id="rqange">
+
+            <!-- Check BOX -->
+            <div class="form-check mt-2">
+                <label for="agree" class="form-check-lable">I'm Agree</label>
+                <input type="checkbox" class="form-check-input" id="agree">
+            </div>
+
+
         </form>
     </div>    
     <script src="./js/jquery-3.6.4.min.js"></script>
