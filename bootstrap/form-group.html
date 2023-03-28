@@ -9,15 +9,15 @@
 </head>
 <body>
     <div class="container">
-        <form action="" method="get" >
-            <div class="row">
-                <label class="col-2" for="username" >UserName:</label>
-                <input id="username" type="text" class="form-control col-4">
+        <form action="" method="get" class="needs-validation" >
+            
+                <label required class="col-2" for="username" >UserName:</label>
+                <input required id="username" type="text" class="form-control ">
+                <div class="invalid-feedback">The username already exist</div>
             
                 <label class="col-2" for="passwd">Password:</label>
-                <input id="passwd" type="text" class="form-control col-4">
-
-            </div>
+                <input id="passwd" type="text" class="form-control is-valid">
+            
 
             <div class="row">
                 <div class="col-lg-1" >

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/bootstrap.min.css">
+    <title>Form group</title>
+</head>
+<body>
+    <div class="container">
+        <form action="" method="get" class="needs-validation" novalidate>
+
+                <label for="username" >UserName:</label>
+                <input required id="username" type="text" class="form-control">
+                <div class="invalid-feedback">The username already exist</div>
+            
+                <label  for="passwd">Password:</label>
+                <input required id="passwd" type="text" class="form-control">
+                <div class="invalid-feedback">Please fill it  correctly</div>
+
+                <button type="submit" class="btn btn-primary mt-1">Submit</button>
+
+        </form>
+    </div>    
+    <script src="./js/jquery-3.6.4.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function () {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+            }, false)
+            })
+        })()
+    </script>
+    
+</body>
+</html>
