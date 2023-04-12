@@ -1,8 +1,10 @@
-from pytube import YouTube
-yt = YouTube('https://youtu.be/f0UPSNGiHxw')
-yt.streams.filter(progressive=True)
-yt.streams.filter(adaptive=True)
-yt.streams.filter(only_audio=True)
-yt.streams.filter(file_extension='mp4')
-stream = yt.streams.get_by_itag(22)
-stream.download()
+import pytube
+link = "https://youtu.be/LZRxg87d3JM?list=PLTEzTFAAzxQ5d322oNOyTei_nZP4GyKwJ"
+yt = pytube.YouTube(link)
+print("Title:", yt.title)
+print("Author:", yt.author)
+print("Published date:", yt.publish_date.strftime("%Y-%m-%d"))
+print("Number of views:", yt.views)
+print("Length of video:", yt.length, "seconds")
+# yt.streams.get_highest_resolution().download()
+print("Video successfullly downloaded from", link)
